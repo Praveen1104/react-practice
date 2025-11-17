@@ -1,0 +1,28 @@
+.folder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.folder:hover {
+  background: #e2e2e2;
+}
+
+.file {
+  padding-left: 20px;
+  display: block;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+
+.inputContainer_input {
+  margin-left: 5px;
+  padding: 2px;
+}

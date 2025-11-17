@@ -1,0 +1,18 @@
+.nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blueviolet;
+}
+
+ul {
+  margin-left: 120px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  /* makes ul take remaining space in nav */
+}

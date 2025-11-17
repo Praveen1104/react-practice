@@ -1,0 +1,22 @@
+.nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blueviolet;
+}
+
+ul {
+  width: 100%;
+  margin-left: 120px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  /* makes ul take remaining space in nav */
+}
+
+h1 {
+  width: 100%;
+}

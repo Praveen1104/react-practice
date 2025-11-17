@@ -1,0 +1,106 @@
+/* ============================
+   BLOCK: pagination
+   Root container for the entire pagination component
+============================ */
+.pagination {
+  display: flex; /* Flex layout to align child elements vertically */
+  flex-direction: column; /* Stack children vertically: grid + controls */
+  align-items: center; /* Center children horizontally */
+}
+
+/* ============================
+   ELEMENT: pagination__grid
+   Container for all product cards
+============================ */
+.pagination__grid {
+  display: flex; /* Flex layout to arrange cards horizontally */
+  flex-wrap: wrap; /* Wrap cards to next line if overflow */
+  gap: 15px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+}
+
+/* ============================
+   ELEMENT: pagination__card
+   Individual product card
+============================ */
+.pagination__card {
+  border: 2px solid; /* Card border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Inner spacing */
+  width: 280px; /* Fixed card width */
+  text-align: center; /* Center content inside card */
+  transition: transform 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+/* ============================
+   MODIFIER: hover state on card
+   Makes the card slightly larger on hover
+============================ */
+.pagination__card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* ============================
+   ELEMENT: pagination__card-image
+   Image inside the product card
+============================ */
+.pagination__card-image {
+  width: 100%; /* Full width of the card */
+  border-radius: 6px; /* Rounded corners */
+  object-fit: cover; /* Ensures image covers the area without stretching */
+}
+
+/* ============================
+   ELEMENT: pagination__card-title
+   Title of the product
+============================ */
+.pagination__card-title {
+  font-size: 14px; /* Small readable font */
+  margin-top: 20px; /* Space between image and title */
+}
+
+/* ============================
+   ELEMENT: pagination__controls
+   Container for Prev, Next, and page number buttons
+============================ */
+.pagination__controls {
+  margin-top: 20px; /* Space above controls */
+  text-align: center; /* Center buttons horizontally */
+}
+
+/* ============================
+   ELEMENT: pagination__button
+   Base styling for all pagination buttons
+============================ */
+.pagination__button {
+  margin: 0 5px; /* Horizontal space between buttons */
+  padding: 5px 10px; /* Padding inside button */
+  border: 2px solid #ddd; /* Button border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: white; /* Base button color */
+  transition: background-color 0.2s; /* Smooth hover effect */
+}
+
+/* ============================
+   MODIFIER: hover state for buttons
+============================ */
+.pagination__button:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+/* ============================
+   MODIFIER: disabled state for buttons
+============================ */
+.pagination__button:disabled {
+  cursor: not-allowed; /* Change cursor to indicate disabled */
+  opacity: 0.5; /* Make button semi-transparent */
+}
+
+/* ============================
+   MODIFIER: active page button
+   Highlights the currently active page
+============================ */
+.pagination__button--active {
+  font-weight: bold; /* Bold text for active page */
+  background-color: #eee; /* Light grey background for active page */
+}
