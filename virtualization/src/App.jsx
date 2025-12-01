@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0);
   const items = useMemo(
     () =>
-      Array.from({ length: 100_000 }, (_, i) => ({
+      Array.from({ length: 100000 }, (_, i) => ({
         id: i + 1,
         label: `Item ${i + 1}`,
       })),
@@ -16,7 +16,10 @@ function App() {
   console.log(items);
   return (
     <>
-      <VirtualList items={items} />
+      <div className="p-8">
+        <h1>Custom Virtualization</h1>
+        <VirtualList items={items} height={500} />
+      </div>
     </>
   );
 }
