@@ -20,7 +20,7 @@ function Product() {
   return (
     <div>
       <h1>Component Based Lazy Produuct List</h1>
-      {products?.slice(0, 11).map((product, i) => {
+      {products?.products?.slice(0, 11).map((product, i) => {
         return (
           <div key={i} className="card">
             <p>{product.title}</p>
