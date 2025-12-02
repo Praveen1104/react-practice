@@ -1,0 +1,12 @@
+.outer-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.single-card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 2px solid;
+  margin: 4px;
+}
