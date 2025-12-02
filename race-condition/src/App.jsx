@@ -32,3 +32,4 @@ const App = () => {
 
 export default App;
 //https://fakeapi.platzi.com/en/rest/categories/
+//https://medium.com/hackernoon/avoiding-race-conditions-when-fetching-data-with-react-hooks-220d6fd0f663
