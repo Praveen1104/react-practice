@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import "./styles.css";
 
 function Accordion({ items }) {
   const [open, setOpen] = useState();
@@ -7,9 +8,12 @@ function Accordion({ items }) {
   const onHandle = (i) => {
     setOpen((prev) => (prev === i ? null : i));
   };
+  if (items.length === 0) {
+    return <p>No items available</p>;
+  }
   return (
     <div className="accordion">
-      {items.map((item, i) => {
+      {items?.map((item, i) => {
         return (
           <div key={i} className="accordion-item">
             <button className="accordion-title" onClick={() => onHandle(i)}>
