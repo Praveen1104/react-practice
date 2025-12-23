@@ -1,5 +1,22 @@
-.progress{
+.progress {
+  position: relative;
   height: 20px;
-  width:500px;
+  width: 500px;
+  border: 2px solid;
+  border-radius: 15px;
+  overflow: hidden;
+}
 
+.progress span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.progress .bar {
+  background-color: greenyellow;
+  height: 100%;
+  z-index: 1;
+  
 }
